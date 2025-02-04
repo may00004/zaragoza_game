@@ -47,11 +47,11 @@ p {
 }
 
 /* 📍 Position des liens */
-.top    { top: -30px; left: 50; }
-.left   { left: -1500px; bottom: -10;  }
-.right  { right: -90px; top: 50; }
-.bottom { bottom: -30px; left: 50;  }
-.righttop    { top: -30px; right:30;  }
-.lefttop    { top: -30px; left: 50;  }
+.top    { top: 30px; left: -10; }
+.left   { top: -10px; left: 50;  }
+.right  { top: 30 px; left: -50; }
+.bottom { top: -50px; left: 50;  }
+.righttop    { top: 30px; left:-30;  }
+.lefttop    { top: 30px; left: 50;  }
 
 
