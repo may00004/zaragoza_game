@@ -48,10 +48,10 @@ p {
 
 /* 📍 Position des liens */
 .top    { top: -30px; left: 50; }
-.left   { left: -70px; top: 50;  }
-.right  { right: -70px; top: 50; }
+.left   { left: -1500px; bottom: -10;  }
+.right  { right: -90px; top: 50; }
 .bottom { bottom: -30px; left: 50;  }
-.righttop    { top: -30px; left: 50;  }
+.righttop    { top: -30px; right:30;  }
 .lefttop    { top: -30px; left: 50;  }
 
 
