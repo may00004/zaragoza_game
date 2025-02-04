@@ -7,7 +7,7 @@ body {
 
 /* 🎨 Texte stylisé */
 p {
-    color: #ebc8a3;
+    color: rgb(255, 200,0);
     font-size: 18px;
     width: 50%;
     margin: auto;
@@ -47,11 +47,11 @@ p {
 }
 
 /* 📍 Position des liens */
-.top    { top: 30px; left: -10; }
-.left   { top: -10px; left: 50;  }
-.right  { top: 30 px; left: -50; }
-.bottom { top: -50px; left: 50;  }
-.righttop    { top: 30px; left:-30;  }
-.lefttop    { top: 30px; left: 50;  }
+.top    { top: 40px; left: 30%; transform: translateX(-50%); }
+.left   { left: -270px; top: 75%; transform: translateY(-50%); }
+.right  { right: -120px; top: 50%; transform: translateY(-50%); }
+.bottom { bottom: -35px; left: 0%; transform: translateX(-50%); }
+.righttop  { right: -70px; top: 5%; transform: translateX(20%); transform: translateY(90%); }
+.lefttop{ right: 310px; top: 10%; transform: translateX (30%); transform: translateY(90%); }
 
 
