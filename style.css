@@ -53,5 +53,35 @@ p {
 .bottom { bottom: -35px; left: 0%; transform: translateX(-50%); }
 .righttop  { right: -70px; top: 5%; transform: translateX(20%); transform: translateY(90%); }
 .lefttop{ right: 310px; top: 10%; transform: translateX (30%); transform: translateY(90%); }
+.bottom { bottom: -35px; left: 0%; transform: translateX(0%); }
 
-
+.containervagues {
+    width: 100%;
+    height: auto; /* S'adapte au contenu */
+    
+    --s: 100px; /* Taille d'une vague */
+    --c1: #355c7d; 
+    --c2:  rgb(255, 139, 0);
+  
+    --_g: var(--c2) 4% 14%, var(--c1) 14% 24%, var(--c2) 22% 34%,
+      var(--c1) 34% 44%, var(--c2) 44% 56%, var(--c1) 56% 66%;
+  
+    background: radial-gradient(
+        100% 100% at 100% 0,
+        var(--c1) 4%,
+        var(--_g),
+        #0008 96%,
+        #0000
+      ),
+      radial-gradient(
+          100% 100% at 0 100%,
+          #0000,
+          #0008 4%,
+          var(--_g),
+          var(--c1) 96%
+        )
+        var(--c1);
+    
+    background-size: var(--s) calc(3 * var(--s)); /* Ne répète que 3 vagues */
+  }
+  
