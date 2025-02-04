@@ -47,11 +47,11 @@ p {
 }
 
 /* 📍 Position des liens */
-.top    { top: -30px; left: 50%; transform: translateX(-50%); }
-.left   { left: -70px; top: 50%; transform: translateY(-50%); }
-.right  { right: -70px; top: 50%; transform: translateY(-50%); }
-.bottom { bottom: -30px; left: 50%; transform: translateX(-50%); }
-.righttop    { top: -30px; left: 50%; transform: translateX(-50%); }
-.lefttop    { top: -30px; left: 50%; transform: translateX(-50%); }
+.top    { top: -30px; left: 50; }
+.left   { left: -70px; top: 50;  }
+.right  { right: -70px; top: 50; }
+.bottom { bottom: -30px; left: 50;  }
+.righttop    { top: -30px; left: 50;  }
+.lefttop    { top: -30px; left: 50;  }
 
 
