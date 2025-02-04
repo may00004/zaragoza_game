@@ -1,92 +1,9 @@
 body {
-    background-color: #cc9458; 
+    background-color:  rgb(255, 139, 0); 
 }
 
-p{}
+p{
+    color: #ebc8a3; 
+    
+}
 
-/* From Uiverse.io by barisdogansutcu */ 
-.password {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
-  .password input {
-    width: 30px;
-    height: 40px;
-    text-align: center;
-    background-color: transparent;
-    border: none;
-    border-bottom: solid 2px rgb(77, 56, 26);
-    font-size: 20px;
-    color: rgb(77, 56, 26);
-    outline: none;
-  }
-  /* From Uiverse.io by aadium */ 
-.container {
-    --color1: rgb(0, 3, 49, 0.6);
-    --color2: rgba(248, 255, 182, 0.6);
-    --color3: rgb(255, 0, 0, 0.6);
-    --color4: rgb(0, 255, 0, 0.6);
-    --color5: rgb(0, 0, 255, 0.6);
-    --color6: rgb(255, 255, 0, 0.6);
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(45deg, var(--color2) 25%, transparent 25%, transparent 75%, var(--color2) 75%, var(--color2)), 
-                      linear-gradient(135deg, var(--color2) 25%, var(--color1) 25%, var(--color1) 75%, var(--color2) 75%, var(--color2)),
-                      linear-gradient(225deg, var(--color3) 25%, var(--color4) 25%, var(--color4) 75%, var(--color3) 75%, var(--color3)),
-                      linear-gradient(315deg, var(--color5) 25%, var(--color6) 25%, var(--color6) 75%, var(--color5) 75%, var(--color5));
-    background-size: 90px 90px;
-    background-position: 0 0, 135px 135px, -135px -135px, 0 0;
-  }
-  
-  /* From Uiverse.io by kamehame-ha */ 
-.cards {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .cards .red {
-    background-color: #f43f5e;
-  }
-  
-  .cards .blue {
-    background-color: #3b82f6;
-  }
-  
-  .cards .green {
-    background-color: #22c55e;
-  }
-  
-  .cards .card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    height: 100px;
-    width: 250px;
-    border-radius: 10px;
-    color: white;
-    cursor: pointer;
-    transition: 400ms;
-  }
-  
-  .cards .card p.tip {
-    font-size: 1em;
-    font-weight: 700;
-  }
-  
-  .cards .card p.second-text {
-    font-size: .7em;
-  }
-  
-  .cards .card:hover {
-    transform: scale(1.1, 1.1);
-  }
-  
-  .cards:hover > .card:not(:hover) {
-    filter: blur(10px);
-    transform: scale(0.9, 0.9);
-  }
