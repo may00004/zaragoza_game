@@ -55,63 +55,31 @@ p {
 .lefttop{ right: 310px; top: 10%; transform: translateX (30%); transform: translateY(90%); }
 .bottom { bottom: -35px; left: 0%; transform: translateX(0%); }
 
-.containervagues {
+/* From Uiverse.io by Alaner-xs */ 
+/* From Uiverse.io by ErzenXz */ 
+.input {
     width: 100%;
-    height: auto; /* S'adapte au contenu */
-    
-    --s: 100px; /* Taille d'une vague */
-    --c1: #355c7d; 
-    --c2:  rgb(255, 139, 0);
-  
-    --_g: var(--c2) 4% 14%, var(--c1) 14% 24%, var(--c2) 22% 34%,
-      var(--c1) 34% 44%, var(--c2) 44% 56%, var(--c1) 56% 66%;
-  
-    background: radial-gradient(
-        100% 100% at 100% 0,
-        var(--c1) 4%,
-        var(--_g),
-        #0008 96%,
-        #0000
-      ),
-      radial-gradient(
-          100% 100% at 0 100%,
-          #0000,
-          #0008 4%,
-          var(--_g),
-          var(--c1) 96%
-        )
-        var(--c1);
-    
-    background-size: var(--s) calc(3 * var(--s)); /* Ne répète que 3 vagues */
+    max-width: 220px;
+    height: 45px;
+    margin: 50px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1.5px solid rgb(255, 200,0);
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
   }
   
-/* From Uiverse.io by Alaner-xs */ 
-.input {
-    background-color: #383838;
-    border: 1ex solid none;
-    border-top-width: 1.7em;
-    margin: 0;
-    padding: 0;
-    color: #383838;
-    word-wrap: break-word;
-    outline: 7px solid #383838;
-    height: 30px;
-    font-size: 17px;
-    text-align: center;
-    transition: all 1s;
-    max-width: 190px;
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
-   }
-   
-   .input:hover {
-    border-top-width: 0.2em;
-    background-color: #f1e8e8;
-   }
-   
-   .input:focus {
-    border-top-width: 0.2em;
-    background-color: #f1e8e8;
-   }
-
+  .input:hover {
+    border: 2px solid rgb(255, 250,0);
+    box-shadow: 0px 0px 20px -17px;
+  }
+  
+  .input:active {
+    transform: scale(0.95);
+  }
+  
+  .input:focus {
+    border: 2px rgb(255, 250,0);
+  }
    
