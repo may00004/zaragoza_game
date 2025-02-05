@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>A travers Saragosse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Enigme 6 :  parque Grande J.A Labordeta
+    </h1>
+
+    <p>
+        Quel est le nom de la plus magique des fleurs?
+    </p>
+
+
+<!-- From Uiverse.io by Alaner-xs --> 
+
+<input type="text" id="reponse" class="input" placeholder="Entre ta réponse">
+<button onclick="verifierReponse()" class="validate-btn">Valider</button>
+
+<!-- Image du nuage affichée par défaut -->
+<!-- Image affichée (nuage au début) -->
+<img id="imageReponse" src="Image/nuage.png" alt="Nuage" class="big-image">
+
+<!-- L'image cachée qui sera affichée si la réponse est correcte -->
+<img id="Imagesoleil" src="Image/soleil.png" alt="Indice débloqué !" style="display: none; width: 300px; margin-top: 20px;">
+
+<p id="indiceMessage" class="hidden" style="display: none">Tu as trouvé un indice : M</p>
+
+    <div class="container">
+        <a href="index.html" class="validate-btn">retour</a>
+        
+       
+    </div>
+
+    <script>
+        function verifierReponse() {
+            let bonneReponse = "Abracadabra"; // Réponse correcte
+            let reponseUtilisateur = document.getElementById("reponse").value.trim();
+            let image = document.getElementById("imageReponse");
+            let message = document.getElementById("indiceMessage");
+    
+            // Vérifier si la réponse est correcte (insensible à la casse)
+            if (reponseUtilisateur.toLowerCase() === bonneReponse.toLowerCase()) {
+                image.src = "Image/soleil.png"; // Changer l'image du nuage au soleil
+                image.alt = "Soleil";
+                message.style.display = "flex"; // Rendre le message visible
+            } else {
+                alert("Mauvaise réponse ! Essaye encore !");
+            }
+        }
+    </script>
+    
+    
+
+</body>
+</html>
