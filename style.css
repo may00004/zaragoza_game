@@ -45,7 +45,7 @@ p {
     background-color: rgb(255, 139, 0);
     color: white;
 }
-.validate-btn{ position: absolute;
+.validate-btn{ position: flex;
   padding: 10px 15px;
   background-color: #fff;
   color: rgb(255, 139, 0);
@@ -55,7 +55,6 @@ p {
   transition: 0.3s;
   display: block;
   margin: 20px auto;
-  padding: 10px 20px;
  
   font-size: 18px;
   border: none;
