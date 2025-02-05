@@ -14,11 +14,14 @@
         Quel est le nom de la statue qui se tient à coté de la muraille romaine?
     </p>
 
- 
-<div class="containervagues">
+
 <!-- From Uiverse.io by Alaner-xs --> 
 
-<input type="text" name="text" class="input" placeholder="entre ta réponse">
+<input type="text" id="reponse" class="input" placeholder="Entre ta réponse">
+<button onclick="verifierReponse()" class="validate-btn">Valider</button>
+
+<!-- L'image cachée qui sera affichée si la réponse est correcte -->
+<img id="Imagesoleil" src="soleil.jpg" alt="Indice débloqué !" style="display: none; width: 300px; margin-top: 20px;">
 
 
     <div class="container">
@@ -26,7 +29,20 @@
         
        
     </div>
-</div>
+
+<script>
+    function verifierReponse() {
+        let bonneReponse = "Ceasar Augusto"; // Mets ici la réponse correcte (sans accents pour éviter les erreurs)
+        let reponseUtilisateur = document.getElementById("reponse").value.trim();
+
+        // Vérifier si la réponse est correcte (insensible à la casse)
+        if (reponseUtilisateur.toLowerCase() === bonneReponse.toLowerCase()) {
+            document.getElementById("Imagesoleil").style.display = "block";
+        } else {
+            alert("Mauvaise réponse ! Essaye encore !");
+        }
+    }
+</script>
 
 </body>
 </html>
