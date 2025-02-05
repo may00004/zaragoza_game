@@ -33,19 +33,22 @@
        
     </div>
 
-<script>
-    function verifierReponse() {
-        let bonneReponse = "Ceasar Augusto"; // Mets ici la réponse correcte (sans accents pour éviter les erreurs)
-        let reponseUtilisateur = document.getElementById("reponse").value.trim();
-
-        // Vérifier si la réponse est correcte (insensible à la casse)
-        if (reponseUtilisateur.toLowerCase() === bonneReponse.toLowerCase()) {
-            document.getElementById("Imagesoleil").style.display = "block";
-        } else {
-            alert("Mauvaise réponse ! Essaye encore !");
+    <script>
+        function verifierReponse() {
+            let bonneReponse = "Augusto"; // Réponse correcte
+            let reponseUtilisateur = document.getElementById("reponse").value.trim();
+            let image = document.getElementById("imageReponse");
+    
+            // Vérifier si la réponse est correcte (insensible à la casse)
+            if (reponseUtilisateur.toLowerCase() === bonneReponse.toLowerCase()) {
+                image.src = "Image/soleil.png"; // Change le nuage en soleil
+                image.alt = "Soleil"; // Mise à jour de l'alt pour l'accessibilité
+            } else {
+                alert("Mauvaise réponse ! Essaye encore !");
+            }
         }
-    }
-</script>
+    </script>
+    
 
 </body>
 </html>
