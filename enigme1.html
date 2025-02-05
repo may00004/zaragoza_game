@@ -37,14 +37,14 @@
 
     <script>
         function verifierReponse() {
-            let bonneReponse = "Caesare sAugusto"; // Réponse correcte
+            let bonneReponse = "Caesare Augusto"; // Réponse correcte
             let reponseUtilisateur = document.getElementById("reponse").value.trim();
             let image = document.getElementById("imageReponse");
             let message = document.getElementById("indiceMessage");
     
             // Vérifier si la réponse est correcte (insensible à la casse)
             if (reponseUtilisateur.toLowerCase() === bonneReponse.toLowerCase()) {
-                image.src = "soleil.png"; // Changer l'image du nuage au soleil
+                image.src = "Image/soleil.png"; // Changer l'image du nuage au soleil
                 image.alt = "Soleil";
                 message.style.visibility = "visible"; // Rendre le message visible
             } else {
