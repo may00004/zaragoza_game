@@ -27,7 +27,7 @@
 <!-- L'image cachée qui sera affichée si la réponse est correcte -->
 <img id="Imagesoleil" src="Image/soleil.png" alt="Indice débloqué !" style="display: none; width: 300px; margin-top: 20px;">
 
-<p id="indiceMessage" class="hidden">Tu as trouvé un indice : J</p>
+<p id="indiceMessage" class="hidden" style="display: none">Tu as trouvé un indice : J</p>
 
     <div class="container">
         <a href="index.html" class="validate-btn">retour</a>
@@ -46,7 +46,7 @@
             if (reponseUtilisateur.toLowerCase() === bonneReponse.toLowerCase()) {
                 image.src = "Image/soleil.png"; // Changer l'image du nuage au soleil
                 image.alt = "Soleil";
-                message.style.visibility = "visible"; // Rendre le message visible
+                message.style.display = "flex"; // Rendre le message visible
             } else {
                 alert("Mauvaise réponse ! Essaye encore !");
             }
