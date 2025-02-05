@@ -45,6 +45,20 @@ p {
     background-color: rgb(255, 139, 0);
     color: white;
 }
+.validate-btn{ position: absolute;
+  padding: 10px 15px;
+  background-color: #fff;
+  color: rgb(255, 139, 0);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;}
+
+  .validate-btn:hover {
+    background-color: rgb(255, 139, 0);
+    color: white;
+}
+  
 
 /* 📍 Position des liens */
 .top    { top: 40px; left: 30%; transform: translateX(-50%); }
