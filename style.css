@@ -162,7 +162,7 @@ color: white;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin: auto;
+  margin: 2px;
 }
 .password input {
   width: 30px;
